@@ -1,0 +1,173 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.wrap{
+    margin: 50px;
+
+}
+
+.container {
+    display: inline;
+    width: 300px;
+}
+
+h1 {
+    color: lightcoral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box {
+    border-radius: 5px;
+    height:40px ;
+    margin: 50px auto;
+    width: 80px;
+}
+
+.wrap:hover .box { /* sirve para portfolio??*/
+    transform: scale(2);
+}
+
+.box1 {
+    background-color: lightgreen;
+}
+
+.box2 {
+    background-color: lightseagreen;
+
+    transition: all 1s;
+    /*
+    transition-property: ; - A donde se lo aplica -
+    transition-duration: ; - Tiempo de transicion -
+    */
+}
+
+
+.circle0, .circle1, .circle2, 
+.circle3, .circle4, .circle5 {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+} 
+
+.container-circle:hover .circle0,
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5 {
+    transform: translateX(200px);
+}
+
+
+
+.circle0 {
+    background-color: salmon;
+    transition: all 1.5s ease-out;
+}
+
+.circle1 {
+    background-color: lightseagreen;
+    transition: all 1.5s ease-in;
+}
+
+.circle2 {
+    background-color: lightpink;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle3 {
+    background-color: lightslategray;
+}
+
+.circle4 {
+    background-color: lightseagreen;
+    transition: all 1.5s ease;
+}
+
+.circle5 {
+    background-color: lightyellow;
+    transition: all 1.5s cubic-bezier(0, 1, 0.98, 0);
+}
+
+
+.squeare1 {
+    background-color: #00aa9d;
+    border-radius: 3px;
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+    width: 150px;
+    transition: transform 0.8s;
+}
+
+.squeare2 {
+    background-color: #005400;
+    border-radius: 3px;
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+    width: 150px;
+    transition: transform 0.8s;
+}
+
+.squeare2:hover {
+    transform: translate(20px, 20px);
+}
+
+.origin {
+    background-color: skyblue;
+    border-radius: 5px 50%;
+    height: 100px;
+    margin: 150px auto;
+    transform-origin: left top;
+    transition: transform 3s;
+    width: 100px;
+}
+
+
+.origin:hover {
+    transform: rotate(230deg)
+}
+    
+
+@keyframes tripodi {
+    /* from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    } */
+
+
+    0% {
+        background-color: lightslategrey;
+    }
+
+    25% {
+        background-color: lightgreen;
+        border-radius: 50px ;
+    }
+
+    50% {
+        background-color: salmon;
+    }
+
+    100% {
+        background-color: lightseagreen;        
+    }
+}
+
+.animaciones {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: tripodi 4s;
+    /* animation-name: tripodi;
+    animation-duration: 4s; */
+}
+
